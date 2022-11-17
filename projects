@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <title>Projects | Cruzo</title>
+    <link rel="stylesheet" href="stylesheets/default.css">
+    <ul>
+        <li><a href="\">Home</a></li>
+        <li><a href="projects">Projects!</a></li>
+        <li><a href="socials">Socials</a></li>
+        <li><a href="aboutme">About Me</a></li>
+      </ul>
+    <h1>Cruzo.hopto.org</h1>
+    <body>
+        <h2>Here are the thing I am working on!</h2>
+            <p>FNF VS Cruz (<a href="https://github.com/CruzoPlayz/VS-Cruz">github.com/CruzoPlayz/VS-Cruz</a>)</p>
+            <p>Final Escape Cover :/ (<a href="https://github.com/CruzoPlayz/FINAL-MODE">github.com/CruzoPlayz/FINAL-MODE</a>)</p>
+
+    </body>
+</html>
