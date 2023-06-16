@@ -1,18 +1,14 @@
-body {
-    font-family: sans-serif;
-    text-align: center;
-    position: relative; left:0px; top:200px;
-}
-h1 {
-    font-family: fonts/Roboto;
-    position: relative; left:0px; top:-180px;
+h1, body {
+  background-color: rgb(192, 217, 255);
+  color: rgb(9, 77, 82);
+  text-align: center;
 }
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #5988a3;
     position: relative; left:0px; top:-170px;
     text-align: center;
   }
@@ -24,12 +20,12 @@ ul {
   
   li a {
     display: block;
-    color: white;
+    color: rgb(9, 77, 82);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
   li a:hover {
-    background-color: #111;
+    background-color: rgb(7, 59, 63);
   }

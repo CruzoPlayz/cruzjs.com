@@ -1,2 +1,2 @@
-# cruzoplayz.github.io
+# CruzJS.com
 Yeaaah
