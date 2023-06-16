@@ -1,8 +1,3 @@
-h1, body {
-  background-color: rgb(192, 217, 255);
-  color: rgb(9, 77, 82);
-  text-align: center;
-}
 ul {
     list-style-type: none;
     margin: 0;
@@ -12,14 +7,20 @@ ul {
     position: relative; left:0px; top:-170px;
     text-align: center;
   }
-  
+
+  h1, body {
+    background-color: rgb(192, 217, 255);
+    color: rgb(9, 77, 82);
+    text-align: center;
+  }
+
   li {
     float: left;
     text-align: center;
   }
   
   li a {
-    display: block;
+    display: visible;
     color: rgb(9, 77, 82);
     text-align: center;
     padding: 14px 16px;
