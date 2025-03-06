@@ -1,8 +1,9 @@
 /* I need this to be unique and not just a copy of logzinga.com :P */
 h1, body {
   background-color: rgb(255, 255, 255);
-  color: rgb(75, 56, 195);
+  color: rgb(0, 0, 0);
   text-align: center;
+  font: Arial;
 }
 
 .footer {
