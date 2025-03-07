@@ -20,6 +20,10 @@ h1, body {
   text-decoration: none;
   font-size: 40px;
   border-radius: 5px;
+  
+}
+.navigation a:hover {
+  text-decoration: underline;
 }
 
 .latestcontent {
