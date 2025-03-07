@@ -1,39 +1,39 @@
-/* I need this to be unique and not just a copy of logzinga.com :P */
-h1, body {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  text-align: center;
-  font-family: Arial;
-}
+  /* not an exact copy, but could be majorly improved. */
+  h1, body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: Arial;
+  }
 
-.footer {
-  position: fixed;
-  bottom: 1%;
-  width: 100%;
-}
+  .footer {
+    position: fixed;
+    bottom: 1%;
+    width: 100%;
+  }
 
-.navigation a {
-  display: inline-block;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-  font-size: 40px;
-  border-radius: 5px;
-  
-}
-.navigation a:hover {
-  text-decoration: underline;
-}
+  .navigation a {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 40px;
+    border-radius: 5px;
+    
+  }
+  .navigation a:hover {
+    text-decoration: underline;
+  }
 
-.latestcontent {
-  display: inline;
-}
+  .latestcontent {
+    display: inline;
+  }
 
-.socials-extra a {
-  text-decoration: none;
-}
+  .socials-extra a {
+    text-decoration: none;
+  }
 
-.footer a {
-	text-decoration: none;
-}
+  .footer a {
+    text-decoration: none;
+  }
