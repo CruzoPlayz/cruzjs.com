@@ -2,7 +2,7 @@
 <html lang=en>
     <meta charset=utf-8>
     <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
-    <title>Error 404 (Not Found)!!1</title>
+    <title>Page not Found!</title>
     <style>
         * {
             margin: 0;
@@ -83,8 +83,11 @@
     <span id=logo aria-label=Google></span>
 </a>
 <p>
-    <b>404.</b>
-    <ins>That’s an error.</ins>
+    <b>Uh oh!</b>
+    <ins>You've gotten a 404!</ins>
 <p>
-    The requested URL <code>/404</code>
-    was not found on this server.  <ins>That’s all we know.</ins>
+    <script>
+        document.getElementById("code").innerHTML = 
+    "The requested URL " + window.location.href + "was not found on this server.";
+</script>
+ <ins>That’s all we know.</ins>
