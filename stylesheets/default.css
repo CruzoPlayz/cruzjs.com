@@ -1,4 +1,13 @@
   /* not an exact copy, but could be majorly improved. */
+
+  @font-face {
+    font-family: "Eas VHS";
+    src: url("https://cruzjs.com/files/fonts/Eas-vhs.ttf") format("truetype");
+}
+
+:root {
+    font-family: "Eas VHS", sans-serif;
+}
   h1 {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -14,6 +23,10 @@
     border-width: 5px;
 	  border-style: outset;
 	  border-color: #020202;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
 
   .footer {
