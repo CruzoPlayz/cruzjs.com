@@ -1,9 +1,19 @@
   /* not an exact copy, but could be majorly improved. */
-  h1, body {
+  h1 {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     text-align: center;
-    font-family: Arial;
+    justify-content: center;
+  }
+
+  body {
+    background-color: rgba(17, 18, 22, 0.9); /* Adjust 0.2 for lighter/darker tint */
+    color: white; /* Optional: Makes text white for better contrast */
+    padding: 10px; /* Optional: Adds some breathing room */
+    border-radius: 5px;
+    border-width: 5px;
+	  border-style: outset;
+	  border-color: #020202;
   }
 
   .footer {
@@ -13,6 +23,7 @@
   }
 
   .navigation a {
+    background-color: rgba(17, 18, 22, 0.9);
     display: inline-block;
     color: rgb(0, 0, 0);
     text-align: center;
