@@ -4,7 +4,7 @@
 }
 
 :root {
-    --font-family-base: "Eas VHS", sans-serif;
+    font-family: "Eas VHS", sans-serif;
 }
 
 /* Default style for navigation boxes */
