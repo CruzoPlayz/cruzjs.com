@@ -1,0 +1,1091 @@
+@font-face {
+    font-family: "Eas VHS";
+    src: url("https://static.wikitide.net/thebattleforfallonwiki/6/61/Eas-vhs.ttf") format("truetype");
+}
+
+:root {
+    --font-family-base: "Eas VHS", sans-serif;
+}
+
+/* Default style for navigation boxes */
+.navbox {                     /* Navbox container style */
+	box-sizing: border-box;
+	border: 1px solid var(--border-color-base,#a2a9b1);
+	width: 100%;
+	clear: both;
+	font-size: 88%;
+	text-align: center;
+	padding: 1px;
+	margin: 1em auto 0;       /* Prevent preceding content from clinging to navboxes */
+}
+
+.nav-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.nav-card {
+    position: relative;
+    flex: 0 0 auto;
+    overflow: hidden;
+}
+
+.nav-card img {
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.nav-card:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+.nav-card-label {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.citizen-body .mw-parser-output .nav-card-label a {
+    color: white !important;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px black;
+}
+
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+}
+
+#bodyContent {
+    background-color: rgba(17, 18, 22, 0.9); /* Adjust 0.2 for lighter/darker tint */
+    color: white; /* Optional: Makes text white for better contrast */
+    padding: 10px; /* Optional: Adds some breathing room */
+    border-radius: 5px;
+    border-width: 5px;
+	border-style: outset;
+	border-color: #020202;
+}
+
+.page-Main_Page .mw-parser-output {
+    text-align: center;
+}
+
+.page-Main_Page .mw-heading {
+    justify-content: center;
+}
+
+.page-The_Big_Man .citizen-page-heading {
+    background-image: url("https://static.wikitide.net/thebattleforfallonwiki/8/82/TheBigManIcon.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 64px 64px;
+    padding-left: 69px; /* icon width (64px) + a little breathing room */
+}
+
+.page-Computer_Wizz .citizen-page-heading {
+    background-image: url("https://static.wikitide.net/thebattleforfallonwiki/b/b8/ComputerWizzIcon.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 64px 64px;
+    padding-left: 69px; /* icon width (64px) + a little breathing room */
+}
+
+.page-Sigma_Male .citizen-page-heading {
+    background-image: url("https://static.wikitide.net/thebattleforfallonwiki/6/6e/SigmaMaleIcon.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 64px 64px;
+    padding-left: 69px; /* icon width (64px) + a little breathing room */
+}
+
+.page-JS .citizen-page-heading {
+    background-image: url("https://static.wikitide.net/thebattleforfallonwiki/5/59/JSIcon.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 64px 64px;
+    padding-left: 69px; /* icon width (64px) + a little breathing room */
+}
+
+.page-Beta_Male .citizen-page-heading {
+    background-image: url("https://static.wikitide.net/thebattleforfallonwiki/4/4e/BetaMaleIcon.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 64px 64px;
+    padding-left: 69px; /* icon width (64px) + a little breathing room */
+}
+
+@keyframes bg-scroll {
+  from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100px 0px; /* matches the tile size above for a seamless loop */
+    }
+}
+
+
+body.page-Beta_Male:not(.gadget-retrostyle-on) #bodyContent {
+	background-color: rgba(22, 17, 21, 0.9) !important;
+	position: relative;
+}
+
+body.page-Beta_Male:not(.gadget-retrostyle-on) #bodyContent::before {
+	background-image: url(https://static.wikitide.net/thebattleforfallonwiki/f/f8/Missingboi.png);
+	content: '';
+	background-size: 200px 200px;
+	position: absolute;
+	inset: 0;
+	opacity: 0.05;
+	z-index: -1;
+	background-repeat: repeat;
+	animation: bg-scroll 10s linear infinite;
+}
+
+body.page-Beta_Male:not(.gadget-retrostyle-on) .infobox {
+	border: 1px solid #ff00cb;
+	border-radius: 5px;
+	border-spacing: 3px;
+	background-color: #000000;
+	color: white;
+	margin: 0.5em 0 0.5em 1em;
+	padding: 0.2em;
+	float: right;
+	clear: right;
+	font-size: 88%;
+	line-height: 1.5em;
+	background-image: url("https://static.wikitide.net/thebattleforfallonwiki/7/77/Missing.jpg");
+	background-size: cover;
+}
+
+body.page-Beta_Male:not(.gadget-retrostyle-on) .infobox td,
+body.page-Beta_Male:not(.gadget-retrostyle-on) .infobox th {
+	background-color: black;
+	padding: 3px;
+}
+
+body.page-Beta_Male:not(.gadget-retrostyle-on) .mw-file-element {
+	border-width: 3px;
+	border-color: #ff00cb;
+}
+
+
+#The_Linked_Sword {
+    background-image: url("https://static.wikitide.net/thebattleforfallonwiki/3/32/LinkedSword.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 50px;
+    color: #ffcd58;
+    text-shadow: 2px 3px 5px black;
+    padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 7px;
+	background-origin: content-box;
+}
+
+.page-Crashout .citizen-page-heading {
+    background-image: url("https://static.wikitide.net/thebattleforfallonwiki/7/77/CrashoutIcon.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 64px 64px;
+    padding-left: 69px; /* icon width (64px) + a little breathing room */
+}
+
+.page-Red552009 .citizen-page-heading {
+    background-image: url("https://static.wikitide.net/thebattleforfallonwiki/2/24/Red55Icon.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 64px 64px;
+    padding-left: 69px; /* icon width (64px) + a little breathing room */
+}
+
+.page-Fallon .citizen-page-heading {
+    background-image: url("https://static.wikitide.net/thebattleforfallonwiki/0/07/FallonDogIcon.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 64px 64px;
+    padding-left: 69px; /* icon width (64px) + a little breathing room */
+}
+
+.page-George .citizen-page-heading {
+    background-image: url("https://static.wikitide.net/thebattleforfallonwiki/d/dc/GeorgeIcon.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 64px 64px;
+    padding-left: 69px; /* icon width (64px) + a little breathing room */
+}
+
+.page-The_Red_Chaos .infobox-above {
+    color: red !important;
+}
+
+#TiddlesBot_Arm {
+	background-image: url("https://static.wikitide.net/thebattleforfallonwiki/9/9d/Tiddlesbotarmpng.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 50px;
+    color: #ff5858;
+    text-shadow: 2px 3px 5px black;
+    padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 7px;
+	background-origin: content-box;
+}
+
+.quote-style {
+	background-color: white;
+	color: black;
+	padding: 8px;
+	border-width: 5px;
+	border-color: black;
+}
+
+.quote-style1 {
+	background-color: black;
+	color: white;
+	padding: 8px;
+	border-width: 2px;
+	border-color: white;
+}
+
+.quote-style2 {
+	background-color: #000;
+	color: red;
+	padding: 8px;
+	border-width: 2px;
+	border-color: red;
+}
+
+.bm-quote-style:not(.gadget-retrostyle-on) {
+	background-color: #000;
+	color: #ff00cb;
+	padding: 8px;
+	border-width: 2px;
+	border-color: #ff00cb;
+}
+
+.discord-button {
+	background-color: #5865F2;
+	padding: 8px;
+	border-radius: 5px;
+	border-width: 3px;
+	border-color: #2f3680;
+}
+
+.citizen-body .mw-parser-output .discord-button a {
+    color: #FFF !important;
+}
+
+.citizen-body .mw-parser-output .discord-button a::before {
+    content: "";
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin-right: 6px;
+    vertical-align: middle;
+    background-image: url("https://static.wikitide.net/thebattleforfallonwiki/3/3a/Falloncord.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.citizen-body .mw-parser-output .discord-button a::after {
+    display: none;
+}
+
+.citizen-body .mw-parser-output a {
+    color: #FFE5B4 !important;
+}
+
+body {
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -2;
+    transition: opacity 1s ease;
+}
+
+body::before {
+    background-image: url("https://static.wikitide.net/thebattleforfallonwiki/9/96/FallonBG_remaster.png");
+    opacity: 1;
+}
+
+body::after {
+    background-image: url("https://static.wikitide.net/thebattleforfallonwiki/5/5a/FallonBG_remasterNIGHTtime.png");
+    opacity: 0;
+}
+
+.skin-theme-clientpref-night body::before {
+    opacity: 0;
+}
+
+.skin-theme-clientpref-night body::after {
+    opacity: 1;
+}
+
+
+.mw-parser-output h2 {
+	display: inline-block;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    flex-grow: 0;
+}
+
+
+/* disable the Dark Mode invert */
+.client-darkmode, 
+.client-darkmode img, 
+.client-darkmode video, 
+.client-darkmode svg, 
+.client-darkmode iframe, 
+.client-darkmode .mw-no-invert, 
+.client-darkmode .mw-mmv-overlay, 
+.client-darkmode .mw-mmv-pre-image, 
+.client-darkmode .mw-kartographer-map, 
+.client-darkmode .mw-kartographer-mapDialog-map,
+.client-darkmode:not(.mw-invert),
+.client-darkmode img:not(.mw-invert),
+.client-darkmode video:not(.mw-invert),
+.client-darkmode svg:not(.mw-invert),
+.client-darkmode iframe:not(.mw-invert),
+.client-darkmode .mw-no-invert:not(.mw-invert),
+.client-darkmode .cdx-no-invert:not(.mw-invert),
+.client-darkmode td .diffchange:not(.mw-invert),
+.client-darkmode .skin-minerva .mw-notification-visible .mw-notification-content:not(.mw-invert)
+{
+    filter: none;
+    -webkit-filter: none;
+}
+
+.navbox .navbox {
+	margin-top: 0;            /* No top margin for nested navboxes */
+}
+.navbox + .navbox {
+	margin-top: -1px;         /* Single pixel border between adjacent navboxes */
+}
+.navbox-inner,
+.navbox-subgroup {
+	width: 100%;
+}
+.navbox-group,
+.navbox-title,
+.navbox-abovebelow {
+	padding: 0.25em 1em;      /* Title, group and above/below styles */
+	line-height: 1.5em;
+	text-align: center;
+}
+th.navbox-group {             /* Group style */
+	white-space: nowrap;
+	/* @noflip */
+	text-align: right;
+}
+.navbox,
+.navbox-subgroup {
+	background-color: var(--background-color-base,#fff); /* Background color */
+}
+.navbox-list {
+	line-height: 1.5em;
+	border-color: var(--background-color-base,#fff);    /* Must match background color */
+}
+/* cell spacing for navbox cells */
+tr + tr > .navbox-abovebelow,
+tr + tr > .navbox-group,
+tr + tr > .navbox-image,
+tr + tr > .navbox-list {    /* Borders above 2nd, 3rd, etc. rows */
+	border-top: 2px solid var(--background-color-base,#fff); /* Must match background color */
+}
+.navbox th,
+.navbox-title {
+	background-color: rgba(255,255,255,0.3);      /* Level 1 color */
+}
+.navbox-abovebelow,
+th.navbox-group,
+.navbox-subgroup .navbox-title {
+	background-color: rgba(85,85,255,0.2);      /* Level 2 color */
+}
+.navbox-subgroup .navbox-group,
+.navbox-subgroup .navbox-abovebelow {
+	background-color: rgba(85,85,255,0.15);      /* Level 3 color */
+}
+.navbox-even {
+	background-color: var(--background-color-neutral-subtle,#f8f9fa);      /* Even row striping */
+}
+.navbox-odd {
+	background-color: transparent;  /* Odd row striping */
+}
+.navbox .hlist td dl,
+.navbox .hlist td ol,
+.navbox .hlist td ul,
+.navbox td.hlist dl,
+.navbox td.hlist ol,
+.navbox td.hlist ul {
+	padding: 0.125em 0;       /* Adjust hlist padding in navboxes */
+}
+
+/* Default styling for Navbar template */
+.navbar {
+	display: inline;
+	font-size: 88%;
+	font-weight: normal;
+}
+.navbar ul {
+	display: inline;
+	white-space: nowrap;
+}
+.mw-body-content .navbar ul {
+	line-height: inherit;
+}
+.navbar li {
+	word-spacing: -0.125em;
+}
+.navbar.mini li abbr[title] {
+	font-variant: small-caps;
+	border-bottom: none;
+	text-decoration: none;
+	cursor: inherit;
+}
+/* Navbar styling when nested in infobox and navbox */
+.infobox .navbar {
+	font-size: 100%;
+}
+.navbox .navbar {
+	display: block;
+	font-size: 100%;
+}
+.navbox-title .navbar {
+	/* @noflip */
+	float: left;
+	/* @noflip */
+	text-align: left;
+	/* @noflip */
+	margin-right: 0.5em;
+}
+
+.infobox {
+	border: 1px solid #a2a9b1;
+	border-radius: 5px;
+	border-spacing: 3px;
+	background-color: #000000;
+	color: white;
+	/* @noflip */
+	margin: 0.5em 0 0.5em 1em;
+	padding: 0.2em;
+	/* @noflip */
+	float: right;
+	/* @noflip */
+	clear: right;
+	font-size: 88%;
+	line-height: 1.5em;
+}
+
+.infobox .infobox-header,
+.infobox th.infobox-header,
+.infobox td.infobox-header {
+    border-color: black !important;
+    background-color: #d3d3d3; /* keep the light grey fill it already has */
+    color: black; /* Stats text is already dark, this keeps it consistent */
+}
+.infobox caption {
+	font-size: 125%;
+	font-weight: bold;
+	padding: 0.2em;
+	text-align: center;
+}
+
+.infobox-above {
+    color: white !important;
+    background-color: black !important;
+    text-align: center !important;
+}
+
+.infobox td,
+.infobox th {
+color: white;
+	vertical-align: top;
+	/* @noflip */
+	text-align: left;
+}
+    
+.infobox.bordered {
+	border-collapse: collapse;
+}
+.infobox.bordered td,
+.infobox.bordered th {
+	border: 1px solid #a2a9b1;
+}
+.infobox.bordered .borderless td,
+.infobox.bordered .borderless th {
+	border: 0;
+}
+
+.infobox.sisterproject {
+	width: 20em;
+	font-size: 90%;
+}
+
+.infobox.standard-talk {
+	border: 1px solid #c0c090;
+	background-color: #f8eaba;
+}
+.infobox.standard-talk.bordered td,
+.infobox.standard-talk.bordered th {
+	border: 1px solid #c0c090;
+}
+
+/* styles for bordered infobox with merged rows */
+.infobox.bordered .mergedtoprow td,
+.infobox.bordered .mergedtoprow th {
+	border: 0;
+	border-top: 1px solid #a2a9b1;
+	/* @noflip */
+	border-right: 1px solid #a2a9b1;
+}
+
+.infobox.bordered .mergedrow td,
+.infobox.bordered .mergedrow th {
+	border: 0;
+	/* @noflip */
+	border-right: 1px solid #a2a9b1;
+}
+
+/* Styles for geography infoboxes, eg countries,
+   country subdivisions, cities, etc.            */
+.infobox.geography {
+	border-collapse: collapse;
+	line-height: 1.2em;
+	font-size: 90%;
+}
+
+.infobox.geography  td,
+.infobox.geography  th {
+	border-top: 1px solid #a2a9b1;
+	padding: 0.4em 0.6em 0.4em 0.6em;
+}
+.infobox.geography .mergedtoprow td,
+.infobox.geography .mergedtoprow th {
+	border-top: 1px solid #a2a9b1;
+	padding: 0.4em 0.6em 0.2em 0.6em;
+}
+
+.infobox.geography .mergedrow td,
+.infobox.geography .mergedrow th {
+	border: 0;
+	padding: 0 0.6em 0.2em 0.6em;
+}
+
+.infobox.geography .mergedbottomrow td,
+.infobox.geography .mergedbottomrow th {
+	border-top: 0;
+	border-bottom: 1px solid #a2a9b1;
+	padding: 0 0.6em 0.4em 0.6em;
+}
+
+.infobox.geography .maptable td,
+.infobox.geography .maptable th {
+	border: 0;
+	padding: 0;
+}
+
+div.listenlist {
+	background: url("//upload.wikimedia.org/wikipedia/commons/4/47/Sound-icon.svg") no-repeat scroll 0 0 transparent;
+	background-size: 30px;
+	padding-left: 40px;
+}
+
+/* Fix for hieroglyphs specificity issue in infoboxes ([[phab:T43869]]) */
+table.mw-hiero-table td {
+	vertical-align: middle;
+}
+
+/* Style rules for media list templates */
+/* TemplateStyles */
+div.medialist {
+	min-height: 50px;
+	margin: 1em;
+	/* @noflip */
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+div.medialist ul {
+	list-style-type: none;
+	list-style-image: none;
+	margin: 0;
+}
+div.medialist ul li {
+	padding-bottom: 0.5em;
+}
+div.medialist ul li li {
+	font-size: 91%;
+	padding-bottom: 0;
+}
+
+/* Messagebox templates */
+.messagebox {
+	border: 1px solid #a2a9b1;
+	background-color: #f8f9fa;
+	width: 80%;
+	margin: 0 auto 1em auto;
+	padding: .2em;
+}
+.messagebox.merge {
+	border: 1px solid #c0b8cc;
+	background-color: #f0e5ff;
+	text-align: center;
+}
+.messagebox.cleanup {
+	border: 1px solid #9f9fff;
+	background-color: #efefff;
+	text-align: center;
+}
+.messagebox.standard-talk {
+	border: 1px solid #c0c090;
+	background-color: #f8eaba;
+	margin: 4px auto;
+}
+/* For old WikiProject banners inside banner shells. */
+.mbox-inside .standard-talk,
+.messagebox.nested-talk {
+	border: 1px solid #c0c090;
+	background-color: #f8eaba;
+	width: 100%;
+	margin: 2px 0;
+	padding: 2px;
+}
+.messagebox.small {
+	width: 238px;
+	font-size: 85%;
+	/* @noflip */
+	float: right;
+	clear: both;
+	/* @noflip */
+	margin: 0 0 1em 1em;
+	line-height: 1.25em;
+}
+.messagebox.small-talk {
+	width: 238px;
+	font-size: 85%;
+	/* @noflip */
+	float: right;
+	clear: both;
+	/* @noflip */
+	margin: 0 0 1em 1em;
+	line-height: 1.25em;
+	background-color: #F8EABA;
+}
+
+/* Cell sizes for ambox/tmbox/imbox/cmbox/ombox/fmbox/dmbox message boxes */
+th.mbox-text, td.mbox-text {   /* The message body cell(s) */
+	border: none;
+	/* @noflip */
+	padding: 0.25em 0.9em;     /* 0.9em left/right */
+	width: 100%;               /* Make all mboxes the same width regardless of text length */
+}
+td.mbox-image {                /* The left image cell */
+	border: none;
+	/* @noflip */
+	padding: 2px 0 2px 0.9em;  /* 0.9em left, 0px right */
+	text-align: center;
+}
+td.mbox-imageright {           /* The right image cell */
+	border: none;
+	/* @noflip */
+	padding: 2px 0.9em 2px 0;  /* 0px left, 0.9em right */
+	text-align: center;
+}
+td.mbox-empty-cell {           /* An empty narrow cell */
+	border: none;
+	padding: 0;
+	width: 1px;
+}
+
+/* Article message box styles */
+table.ambox {
+	margin: 0 10%;                  /* 10% = Will not overlap with other elements */
+	border: 1px solid #a2a9b1;
+	/* @noflip */
+	border-left: 10px solid #36c;  /* Default "notice" blue */
+	background-color: #fbfbfb;
+	box-sizing: border-box;
+}
+table.ambox + table.ambox {      /* Single border between stacked boxes. */
+	margin-top: -1px;
+}
+.ambox th.mbox-text,
+.ambox td.mbox-text {            /* The message body cell(s) */
+	padding: 0.25em 0.5em;       /* 0.5em left/right */
+}
+.ambox td.mbox-image {           /* The left image cell */
+	/* @noflip */
+	padding: 2px 0 2px 0.5em;    /* 0.5em left, 0px right */
+}
+.ambox td.mbox-imageright {      /* The right image cell */
+	/* @noflip */
+	padding: 2px 0.5em 2px 0;    /* 0px left, 0.5em right */
+}
+
+table.ambox-notice {
+	/* @noflip */
+	border-left: 10px solid #36c;       /* Blue */
+}
+table.ambox-speedy {
+	/* @noflip */
+	border-left: 10px solid #b32424;    /* Red */
+	background-color: #fee7e6;          /* Pink */
+}
+table.ambox-delete {
+	/* @noflip */
+	border-left: 10px solid #b32424;    /* Red */
+}
+table.ambox-content {
+	/* @noflip */
+	border-left: 10px solid #f28500;    /* Orange */
+}
+table.ambox-style {
+	/* @noflip */
+	border-left: 10px solid #fc3;       /* Yellow */
+}
+table.ambox-move {
+	/* @noflip */
+	border-left: 10px solid #9932cc;    /* Purple */
+}
+table.ambox-protection {
+	/* @noflip */
+	border-left: 10px solid #a2a9b1;    /* Gray-gold */
+}
+
+/* Image message box styles */
+table.imbox {
+	margin: 4px 10%;
+	border-collapse: collapse;
+	border: 3px solid #36c;    /* Default "notice" blue */
+	background-color: #fbfbfb;
+	box-sizing: border-box;
+}
+.imbox .mbox-text .imbox {  /* For imboxes inside imbox-text cells. */
+	margin: 0 -0.5em;       /* 0.9 - 0.5 = 0.4em left/right.        */
+	display: block;         /* Fix for webkit to force 100% width.  */
+}
+.mbox-inside .imbox {       /* For imboxes inside other templates.  */
+	margin: 4px;
+}
+
+table.imbox-notice {
+	border: 3px solid #36c;       /* Blue */
+}
+table.imbox-speedy {
+	border: 3px solid #b32424;    /* Red */
+	background-color: #fee7e6;    /* Pink */
+}
+table.imbox-delete {
+	border: 3px solid #b32424;    /* Red */
+}
+table.imbox-content {
+	border: 3px solid #f28500;    /* Orange */
+}
+table.imbox-style {
+	border: 3px solid #fc3;       /* Yellow */
+}
+table.imbox-move {
+	border: 3px solid #9932cc;    /* Purple */
+}
+table.imbox-protection {
+	border: 3px solid #a2a9b1;    /* Gray-gold */
+}
+table.imbox-license {
+	border: 3px solid #88a;       /* Dark gray */
+	background-color: #f7f8ff;    /* Light gray */
+}
+table.imbox-featured {
+	border: 3px solid #cba135;    /* Brown-gold */
+}
+
+/* Category message box styles */
+table.cmbox {
+	margin: 3px 10%;
+	border-collapse: collapse;
+	border: 1px solid #a2a9b1;
+	background-color: #DFE8FF;    /* Default "notice" blue */
+	box-sizing: border-box;
+}
+
+table.cmbox-notice {
+	background-color: #D8E8FF;    /* Blue */
+}
+table.cmbox-speedy {
+	margin-top: 4px;
+	margin-bottom: 4px;
+	border: 4px solid #b32424;    /* Red */
+	background-color: #FFDBDB;    /* Pink */
+}
+table.cmbox-delete {
+	background-color: #FFDBDB;    /* Red */
+}
+table.cmbox-content {
+	background-color: #FFE7CE;    /* Orange */
+}
+table.cmbox-style {
+	background-color: #FFF9DB;    /* Yellow */
+}
+table.cmbox-move {
+	background-color: #E4D8FF;    /* Purple */
+}
+table.cmbox-protection {
+	background-color: #EFEFE1;    /* Gray-gold */
+}
+
+/* Other pages message box styles */
+table.ombox {
+	margin: 4px 10%;
+	border-collapse: collapse;
+	border: 1px solid #a2a9b1;    /* Default "notice" gray */
+	background-color: #f8f9fa;
+	box-sizing: border-box;
+}
+
+table.ombox-notice {
+	border: 1px solid #a2a9b1;    /* Gray */
+}
+table.ombox-speedy {
+	border: 2px solid #b32424;    /* Red */
+	background-color: #fee7e6;    /* Pink */
+}
+table.ombox-delete {
+	border: 2px solid #b32424;    /* Red */
+}
+table.ombox-content {
+	border: 1px solid #f28500;    /* Orange */
+}
+table.ombox-style {
+	border: 1px solid #fc3;       /* Yellow */
+}
+table.ombox-move {
+	border: 1px solid #9932cc;    /* Purple */
+}
+table.ombox-protection {
+	border: 2px solid #a2a9b1;    /* Gray-gold */
+}
+
+/* Talk page message box styles */
+table.tmbox {
+	margin: 4px 10%;
+	border-collapse: collapse;
+	border: 1px solid #c0c090;    /* Default "notice" gray-brown */
+	background-color: #f8eaba;
+	min-width: 80%;
+	box-sizing: border-box;
+}
+.tmbox.mbox-small {
+	min-width: 0;                /* reset the min-width of tmbox above        */
+}
+.mediawiki .mbox-inside .tmbox { /* For tmboxes inside other templates. The "mediawiki" class ensures that */
+	margin: 2px 0;               /* this declaration overrides other styles (including mbox-small above)   */
+	width: 100%;                 /* For Safari and Opera */
+}
+.mbox-inside .tmbox.mbox-small { /* "small" tmboxes should not be small when  */
+	line-height: 1.5em;          /* also "nested", so reset styles that are   */
+	font-size: 100%;             /* set in "mbox-small" above.                */
+}
+
+table.tmbox-speedy {
+	border: 2px solid #b32424;    /* Red */
+	background-color: #fee7e6;    /* Pink */
+}
+table.tmbox-delete {
+	border: 2px solid #b32424;    /* Red */
+}
+table.tmbox-content {
+	border: 2px solid #f28500;    /* Orange */
+}
+table.tmbox-style {
+	border: 2px solid #fc3;       /* Yellow */
+}
+table.tmbox-move {
+	border: 2px solid #9932cc;    /* Purple */
+}
+table.tmbox-protection,
+table.tmbox-notice {
+	border: 1px solid #c0c090;    /* Gray-brown */
+}
+
+/* Disambig and set index box styles */
+table.dmbox {
+	clear: both;
+	margin: 0.9em 1em;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background-color: transparent;
+}
+
+/* Footer and header message box styles */
+table.fmbox {
+	clear: both;
+	margin: 0.2em 0;
+	width: 100%;
+	border: 1px solid #a2a9b1;
+	background-color: #f8f9fa;     /* Default "system" gray */
+	box-sizing: border-box;
+}
+table.fmbox-system {
+	background-color: #f8f9fa;
+}
+table.fmbox-warning {
+	border: 1px solid #bb7070;  /* Dark pink */
+	background-color: #ffdbdb;  /* Pink */
+}
+table.fmbox-editnotice {
+	background-color: transparent;
+}
+/* Div based "warning" style fmbox messages. */
+div.mw-warning-with-logexcerpt,
+div.mw-lag-warn-high,
+div.mw-cascadeprotectedwarning,
+div#mw-protect-cascadeon,
+div.titleblacklist-warning,
+div.locked-warning {
+	clear: both;
+	margin: 0.2em 0;
+	border: 1px solid #bb7070;
+	background-color: #ffdbdb;
+	padding: 0.25em 0.9em;
+	box-sizing: border-box;
+}
+
+/* These mbox-small classes must be placed after all other
+   ambox/tmbox/ombox etc classes. "html body.mediawiki" is so
+   they override "table.ambox + table.ambox" above. */
+html body.mediawiki .mbox-small {   /* For the "small=yes" option. */
+	/* @noflip */
+	clear: right;
+	/* @noflip */
+	float: right;
+	/* @noflip */
+	margin: 4px 0 4px 1em;
+	box-sizing: border-box;
+	width: 238px;
+	font-size: 88%;
+	line-height: 1.25em;
+}
+html body.mediawiki .mbox-small-left {   /* For the "small=left" option. */
+	/* @noflip */
+	margin: 4px 1em 4px 0;
+	box-sizing: border-box;
+	overflow: hidden;
+	width: 238px;
+	border-collapse: collapse;
+	font-size: 88%;
+	line-height: 1.25em;
+}
+
+/* Style for compact ambox */
+/* Hide the images */
+.compact-ambox table .mbox-image,
+.compact-ambox table .mbox-imageright,
+.compact-ambox table .mbox-empty-cell {
+	display: none;
+}
+/* Remove borders, backgrounds, padding, etc. */
+.compact-ambox table.ambox {
+	border: none;
+	border-collapse: collapse;
+	background-color: transparent;
+	margin: 0 0 0 1.6em !important;
+	padding: 0 !important;
+	width: auto;
+	display: block;
+}
+body.mediawiki .compact-ambox table.mbox-small-left {
+	font-size: 100%;
+	width: auto;
+	margin: 0;
+}
+/* Style the text cell as a list item and remove its padding */
+.compact-ambox table .mbox-text {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+.compact-ambox table .mbox-text-span {
+	display: list-item;
+	line-height: 1.5em;
+	list-style-type: square;
+	list-style-image: url(/w/skins/MonoBook/resources/images/bullet.gif);
+}
+.skin-vector .compact-ambox table .mbox-text-span {
+	list-style-type: disc;
+	list-style-image: url(/w/skins/Vector/images/bullet-icon.svg);
+	list-style-image: url(/w/skins/Vector/images/bullet-icon.png)\9;
+}
+/* Allow for hiding text in compact form */
+.compact-ambox .hide-when-compact {
+	display: none;
+}
+
+/* For template documentation */
+/* TemplateStyles */
+.template-documentation {
+	clear: both;
+	margin: 1em 0 0 0;
+	border: 1px solid #a2a9b1;
+	background-color: #ecfcf4;
+	padding: 1em;
+}
+
+.floatright {
+    margin: 0 0 0.5em 0.5em;
+    clear: right;
+    float: right;
+}
+
+.floatleft {
+    margin: 0 0.5em 0.5em 0;
+    float: left;
+    clear: left;
+}
+
+.errorText {
+font-family: "Rubik Glitch", system-ui;
+}
+
+@media screen {
+  th {
+    font-weight: var(--font-weight-semi-bold);
+    color: rgb(0, 0, 0);
+  }
+}
+
+/* Ensure the toggle button behaves like Citizen's other header buttons, not a link */
+.citizen-altstyle-toggle {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.citizen-altstyle-toggle:visited {
+    color: inherit;
+}
+
+.citizen-altstyle-toggle:focus-visible {
+    outline: 2px solid var(--color-progressive);
+    outline-offset: 1px;
+}
