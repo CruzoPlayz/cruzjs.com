@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Eas VHS";
-    src: url("https://static.wikitide.net/thebattleforfallonwiki/6/61/Eas-vhs.ttf") format("truetype");
+    src: url(../files/fonts/Eas-vhs.ttf) format("truetype");
 }
 
 :root {
