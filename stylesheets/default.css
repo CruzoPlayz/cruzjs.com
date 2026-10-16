@@ -125,6 +125,7 @@ h1 {
 .youtube-btn {
     display: inline-flex;  /* Keeps the button inline, but unlocks flexbox layouts */
     align-items: center;   /* PERFECT ALIGNMENT: Forces elements to align vertically */
+    place-content: center;
     gap: 10px;             /* Clean pixel gap between the logo and text */
 }
 
