@@ -111,3 +111,23 @@ h1 {
 	  border-style: outset;
 	  border-color: #020202;
 }
+
+.youtube-btn {
+    display: inline-flex;  /* Keeps the button inline, but unlocks flexbox layouts */
+    align-items: center;   /* PERFECT ALIGNMENT: Forces elements to align vertically */
+    justify-content: center;
+    gap: 10px;             /* Clean pixel gap between the logo and text */
+}
+
+.youtube-btn img {
+    height: 32px;          /* Restricts the logo height so it behaves */
+    width: auto;
+    display: block;
+}
+
+.youtube-btn span {
+    font-family: "Eas VHS", sans-serif; /* Your pixel font */
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 1;        /* Prevents extra font padding from pushing it down */
+}
