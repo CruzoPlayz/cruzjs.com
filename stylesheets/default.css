@@ -63,12 +63,13 @@ body {
 
 /* 4. Headings & Main Content */
 h1 {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 15px;
-    border-radius: 4px;
-    text-transform: uppercase;
+    background-color: rgba(17, 18, 22, 0.9); /* Adjust 0.2 for lighter/darker tint */
+    color: white; /* Optional: Makes text white for better contrast */
+    padding: 10px; /* Optional: Adds some breathing room */
+    border-radius: 5px;
+    border-width: 5px;
+    border-style: outset;
+    border-color: #020202;
 }
 
 .latestcontent {
