@@ -1,6 +1,5 @@
-  /* not an exact copy, but could be majorly improved. */
-
-  @font-face {
+/* 1. Fonts and Roots */
+@font-face {
     font-family: "Eas VHS";
     src: url("https://cruzjs.com/files/fonts/Eas-vhs.ttf") format("truetype");
 }
@@ -8,56 +7,90 @@
 :root {
     font-family: "Eas VHS", sans-serif;
 }
-  h1 {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    text-align: center;
-    justify-content: center;
-  }
 
-  body {
-    background-color: rgba(17, 18, 22, 0.9); /* Adjust 0.2 for lighter/darker tint */
-    color: white; /* Optional: Makes text white for better contrast */
-    padding: 10px; /* Optional: Adds some breathing room */
+/* 2. Global Styles */
+* {
+    box-sizing: border-box; /* Ensures padding doesn't break your layouts */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #111216; /* Clean, dark base fallback */
+    background-image: linear-gradient(rgba(17, 18, 22, 0.9), rgba(17, 18, 22, 0.9)); /* Tint overlay */
+    color: white; 
+    padding: 20px; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    /* Retro Border Aesthetic */
+    border: 5px outset #020202;
     border-radius: 5px;
-    border-width: 5px;
-	  border-style: outset;
-	  border-color: #020202;
-    position: relative;
+    
+    /* Background rules optimized */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-  }
+}
 
-  .footer {
-    position: fixed;
-    bottom: 1%;
-    width: 100%;
-  }
+/* 3. Navigation Bar Layout */
+.navigation {
+    display: flex;
+    justify-content: center; /* Centers the links across the page */
+    gap: 15px; /* Adds clean spacing between links */
+    padding: 10px 0;
+}
 
-  .navigation a {
-    background-color: rgba(17, 18, 22, 0.9);
-    display: inline-block;
+.navigation a {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly translucent white container */
+    color: white; /* FIXED: Changed from black to white so it's readable! */
+    text-align: center;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 24px; /* Reduced slightly from 40px so it fits smaller screens */
+    border-radius: 5px;
+    border: 2px outset rgba(255, 255, 255, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.navigation a:hover {
+    background-color: white;
+    color: black; /* Flips colors on hover for a crisp retro effect */
+    border-style: inset;
+}
+
+/* 4. Headings & Main Content */
+h1 {
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     text-align: center;
-    padding: 14px;
+    padding: 15px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.latestcontent {
+    display: block; /* block/flex is safer than inline for layout containers */
+}
+
+/* 5. Footer & Extra Links */
+.footer {
+    position: fixed;
+    bottom: 2%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer a,
+.socials-extra a {
+    color: #00e5ff; /* Retro neon cyan look for accent links */
     text-decoration: none;
-    font-size: 40px;
-    border-radius: 5px;
-    
-  }
-  .navigation a:hover {
+}
+
+.footer a:hover,
+.socials-extra a:hover {
     text-decoration: underline;
-  }
-
-  .latestcontent {
-    display: inline;
-  }
-
-  .socials-extra a {
-    text-decoration: none;
-  }
-
-  .footer a {
-    text-decoration: none;
-  }
+}
