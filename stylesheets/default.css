@@ -63,9 +63,21 @@ body {
 
 /* 4. Headings & Main Content */
 body::before {
+    content: ""; /* REQUIRED: pseudo-elements won't render without this */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Pushes the image behind all your text and buttons */
+    
     background-image: url("https://static.wikitide.net/thebattleforfallonwiki/9/96/FallonBG_remaster.png");
-    opacity: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1; /* You can change this to 0.4 or 0.5 if you want it dimmer! */
 }
+
 
 h1 {
     background-color: rgba(17, 18, 22, 0.9); /* Adjust 0.2 for lighter/darker tint */
