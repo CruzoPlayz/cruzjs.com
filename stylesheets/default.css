@@ -69,7 +69,7 @@ body::before {
     height: 100vh;
     z-index: -1; /* Pushes the image behind all your text and buttons */
     
-    background-image: url("https://static.wikitide.net/thebattleforfallonwiki/9/96/FallonBG_remaster.png");
+    background-image: url("https://static.wikitide.net/thebattleforfallonwiki/9/96/FallonBG_remasterNIGHTtime.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
