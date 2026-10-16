@@ -62,15 +62,21 @@ body {
 }
 
 /* 4. Headings & Main Content */
+body::before {
+    background-image: url("https://static.wikitide.net/thebattleforfallonwiki/9/96/FallonBG_remaster.png");
+    opacity: 1;
+}
+
 h1 {
     background-color: rgba(17, 18, 22, 0.9); /* Adjust 0.2 for lighter/darker tint */
     color: white; /* Optional: Makes text white for better contrast */
     padding: 10px; /* Optional: Adds some breathing room */
     border-radius: 5px;
     border-width: 5px;
-    border-style: outset;
-    border-color: #020202;
+	border-style: outset;
+	border-color: #020202;
 }
+
 
 .latestcontent {
     display: block; /* block/flex is safer than inline for layout containers */
@@ -94,4 +100,14 @@ h1 {
 .footer a:hover,
 .socials-extra a:hover {
     text-decoration: underline;
+}
+
+.bodycontent {
+    background-color: rgba(17, 18, 22, 0.9); /* Adjust 0.2 for lighter/darker tint */
+    color: white; /* Optional: Makes text white for better contrast */
+    padding: 10px; /* Optional: Adds some breathing room */
+    border-radius: 5px;
+    border-width: 5px;
+	  border-style: outset;
+	  border-color: #020202;
 }
