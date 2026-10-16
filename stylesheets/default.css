@@ -24,10 +24,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
-
-    /* Retro Border Aesthetic */
-    border: 5px outset #020202;
-    border-radius: 5px;
     
     /* Background rules optimized */
     background-repeat: no-repeat;
